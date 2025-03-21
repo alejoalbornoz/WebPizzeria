@@ -1,131 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css">
-    <link rel="shortcut icon" href="/img/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css" />
+    <link rel="shortcut icon" href="/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>World Pizza</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Menu principal -->
-     <div class="menu-principal">
-        <div class="logo" id="logo">
-            <img src="/img/logo.png" alt="Logo">
+    <div class="menu-principal">
+      <div class="logo" id="logo">
+        <img src="/img/logo.png" alt="Logo" />
+      </div>
+
+      <div class="menu-bar" id="menuBar">
+        <i class="fas fa-angle-right" id="btnMenuClose"></i>
+
+        <nav class="enlaces" id="enlaces">
+          <ul>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Equipo</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="sociales" id="Sociales">
+          <a href="#"><span class="fab fa-facebook"></span></a>
+          <a href="#"><span class="fab fa-instagram"></span></a>
+          <a href="#"><span class="fab fa-youtube"></span></a>
+          <a href="#"><span class="fab fa-x-twitter"></span></a>
         </div>
+      </div>
 
-        <div class="menu-bar" id="menuBar">
+      <i class="fas fa-bars" id="btnMenuOpen"></i>
+    </div>
 
-            <i class="fas fa-angle-right" id="btnMenuClose"></i>
-
-            <nav class="enlaces" id="enlaces">
-                <ul>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Equipo</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-
-            <div class="sociales" id="Sociales">
-                <a href="#"><span class="fab fa-facebook"></span></a>
-                <a href="#"><span class="fab fa-instagram"></span></a>
-                <a href="#"><span class="fab fa-youtube"></span></a>
-                <a href="#"><span class="fab fa-x-twitter"></span></a>
+    <section id="menu-productos">
+      <div class="contenedor-principal">
+        <button id="btn-izquierdo">
+          <span class="fas fa-angle-left"></span>
+        </button>
+        <div class="slider">
+          <div class="container-productos">
+            <div class="descripcion-productos">
+              <h2>Producto <b>Premium</b></h2>
+              <h1>Pepperoni</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                molestias quaerat non pariatur sunt enim. Nostrum adipisci optio
+                aliquam sint quo eius possimus labore delectus ullam,
+                perferendis facere exercitationem consectetur?
+              </p>
+              <button class="btn">
+                ¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span>
+              </button>
             </div>
-        </div>
-        
 
-        <i class="fas fa-bars" id="btnMenuOpen"></i>
-
-     </div>
-
-     <section id="menu-productos">
-        <div class="contenedor-principal">
-            <button id="btn-izquierdo"><span class="fas fa-angle-left"></span></button>
-            <div class="slider">
-                <div class="container-productos">
-                    <div class="descripcion-productos">
-                        <h2>Producto <b>Premium</b></h2>
-                        <h1>Peperoni</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, molestias quaerat non pariatur sunt enim. Nostrum adipisci optio aliquam sint quo eius possimus labore delectus ullam, perferendis facere exercitationem consectetur?</p>
-                        <button class="btn">¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span></button>
-                    </div>
-
-                    <div class="imagen-producto">
-                        <img src="/img/menu/peperoni.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="container-productos">
-                    <div class="descripcion-productos">
-                        <h2>Producto <b>Premium</b></h2>
-                        <h1>Especial</h1>
-                        <h2>(Como vos)</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, molestias quaerat non pariatur sunt enim. Nostrum adipisci optio aliquam sint quo eius possimus labore delectus ullam, perferendis facere exercitationem consectetur?</p>
-                        <button class="btn">¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span></button>
-                    </div>
-                    
-                    <div class="imagen-producto">
-                        <img src="/img/menu/especial.png" alt="">
-                    </div>
-                </div>
-
-                <div class="container-productos">
-                    <div class="descripcion-productos">
-                        <h2>Products <b>Básico</b></h2>
-                        <h1>Margarita</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, molestias quaerat non pariatur sunt enim. Nostrum adipisci optio aliquam sint quo eius possimus labore delectus ullam, perferendis facere exercitationem consectetur?</p>
-                        <button class="btn">¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span></button>
-                    </div>
-                    
-                    <div class="imagen-producto">
-                        <img src="/img/menu/margarita.png" alt="">
-                    </div>
-                </div>
-
-                <div class="container-productos">
-                    <div class="descripcion-productos">
-                        <h2>Producto <b>Básico</b></h2>
-                        <h1>Americana</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, molestias quaerat non pariatur sunt enim. Nostrum adipisci optio aliquam sint quo eius possimus labore delectus ullam, perferendis facere exercitationem consectetur?</p>
-                        <button class="btn">¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span></button>
-                    </div>
-                    
-                    <div class="imagen-producto">
-                        <img src="/img/menu/americana.png" alt="">
-                    </div>
-                </div>
-
-                <div class="container-productos">
-                    <div class="descripcion-productos">
-                        <h2>Producto <b>Básico</b></h2>
-                        <h1>Suprema</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, molestias quaerat non pariatur sunt enim. Nostrum adipisci optio aliquam sint quo eius possimus labore delectus ullam, perferendis facere exercitationem consectetur?</p>
-                        <button class="btn">¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span></button>
-                    </div>
-                    
-                    <div class="imagen-producto">
-                        <img src="/img/menu/suprema.png" alt="">
-                    </div>
-                </div>
-
+            <div class="imagen-producto">
+              <img src="/img/menu/peperoni.png" alt="" />
             </div>
-            <button id="btn-derecho"><span class="fas fa-angle-right"></span></button>
+          </div>
+
+          <div class="container-productos">
+            <div class="descripcion-productos">
+              <h2>Producto <b>Premium</b></h2>
+              <h1>Especial</h1>
+              <h2>(Como vos)</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                molestias quaerat non pariatur sunt enim. Nostrum adipisci optio
+                aliquam sint quo eius possimus labore delectus ullam,
+                perferendis facere exercitationem consectetur?
+              </p>
+              <button class="btn">
+                ¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="imagen-producto">
+              <img src="/img/menu/especial.png" alt="" />
+            </div>
+          </div>
+
+          <div class="container-productos">
+            <div class="descripcion-productos">
+              <h2>Products <b>Básico</b></h2>
+              <h1>Margarita</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                molestias quaerat non pariatur sunt enim. Nostrum adipisci optio
+                aliquam sint quo eius possimus labore delectus ullam,
+                perferendis facere exercitationem consectetur?
+              </p>
+              <button class="btn">
+                ¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="imagen-producto">
+              <img src="/img/menu/margarita.png" alt="" />
+            </div>
+          </div>
+
+          <div class="container-productos">
+            <div class="descripcion-productos">
+              <h2>Producto <b>Básico</b></h2>
+              <h1>Americana</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                molestias quaerat non pariatur sunt enim. Nostrum adipisci optio
+                aliquam sint quo eius possimus labore delectus ullam,
+                perferendis facere exercitationem consectetur?
+              </p>
+              <button class="btn">
+                ¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="imagen-producto">
+              <img src="/img/menu/americana.png" alt="" />
+            </div>
+          </div>
+
+          <div class="container-productos">
+            <div class="descripcion-productos">
+              <h2>Producto <b>Básico</b></h2>
+              <h1>Suprema</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                molestias quaerat non pariatur sunt enim. Nostrum adipisci optio
+                aliquam sint quo eius possimus labore delectus ullam,
+                perferendis facere exercitationem consectetur?
+              </p>
+              <button class="btn">
+                ¡Quiero mi Pizza ahora!<span class="fas fa-angle-right"></span>
+              </button>
+            </div>
+
+            <div class="imagen-producto">
+              <img src="/img/menu/suprema.png" alt="" />
+            </div>
+          </div>
         </div>
-     </section>
-
-    
-
-
-
-
-
+        <button id="btn-derecho">
+          <span class="fas fa-angle-right"></span>
+        </button>
+      </div>
+    </section>
 
     <script src="/js/app.js"></script>
-</body>
+  </body>
 </html>
