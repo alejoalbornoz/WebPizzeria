@@ -23,16 +23,12 @@ body {
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
 }
 
 .subtitulos {
   font-size: 25px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
   color: var(--color-primario);
 }
 
@@ -314,4 +310,63 @@ body {
   .imagen-producto {
     width: 85%;
   }
+}
+
+
+/* Seccion servicios */
+#servicios{
+  height: 100vh;
+  background-color: white;
+  padding: 40px;
+}
+
+.servicios-titulos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.servicios-container{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2,  auto);
+  gap: 30px;
+  grid-template-areas: "ingredientes   imagen   rapidez"
+                        "calidad       imagen   delivery";
+}
+
+.calidad{
+  grid-column: calidad;
+  grid-row: calidad;
+}
+
+.ingredientes{
+  grid-column: ingredientes;
+  grid-row: ingredientes;
+}
+
+.rapidez{
+  grid-column: rapidez;
+  grid-row: rapidez;
+}
+
+
+.delivery{
+  grid-column: delivery;
+  grid-row: delivery;
+}
+
+.imagen-central{
+  text-align: center;
+  grid-column: imagen;
+  grid-row: imagen;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.imagen-central:hover{
+  transform: scale(1);
+  
 }
