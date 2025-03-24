@@ -253,6 +253,16 @@ body {
   .imagen-producto {
     width: 85%;
   }
+
+  /* Seccion servicios */
+  .servicios-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "ingredientes  rapidez"
+                          "calidad       delivery";
+  }
+  .imagen-central{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -311,6 +321,8 @@ body {
   .imagen-producto {
     width: 85%;
   }
+
+
 }
 
 
@@ -397,4 +409,85 @@ body {
   font-size: 16px;
   font-style: italic;
   color:var(--color-texto)
+}
+
+
+/* Equipo de trabajo  */
+#equipo{
+  height: 100vh;
+  display: flex;
+}
+
+.persona{
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.6s;
+}
+
+.persona:hover{
+  flex-grow: 3;
+}
+
+.persona-imagen{
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: saturate(30%);
+}
+
+.persona:hover .persona-imagen{
+  filter: saturate(100%);
+  
+}
+
+.persona-info{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.1s;
+}
+
+.persona:hover .persona-info{
+  opacity: 1;
+  bottom: 60px;
+}
+
+.persona-info h2{
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  text-shadow: 2px 2px 3px rgb(119, 119, 119);
+}
+
+.persona-info p{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-secundario);
+  margin-top: 8px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 3px rgba(250,0,0,0.2);
+}
+
+.social-media a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: var(--color-secundario);
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+.social-media a:hover{
+  color:var(--color-secundario);
+  background-color: transparent;
+  transform: scale(1.5);
 }
