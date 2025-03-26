@@ -491,3 +491,27 @@ body {
   background-color: transparent;
   transform: scale(1.5);
 }
+
+
+#ingredientes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingre {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+  max-width: 25%; /* Opcional: si quieres que cada .ingre ocupe el 25% del ancho */
+}
+
+.img-ingre {
+  position: absolute;
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa todo el alto del contenedor */
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: cover; /* Recorta la imagen para que cubra el espacio sin deformarse */
+}
