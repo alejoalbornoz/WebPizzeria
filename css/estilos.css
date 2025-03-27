@@ -531,6 +531,68 @@ Seccion contacto */
 }
 
 
+/* Alertas */
+.alertas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.alert{
+  width: 60%;
+  padding: 20px 60px;
+  position: fixed; 
+  top: 0;
+  transition: all 0.5s;
+}
+
+.alert .icon-alert{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+
+.alert .msg{
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+#alertError{
+  background-color: #ffaeb4;
+  border-right: 4px solid #db2436;
+}
+
+#alertError .icon-alert{
+  color: #db2436;
+}
+
+#alertError .msg{
+  color: #721c24;
+}
+
+#alertSuccess{
+  background-color: #d4edda;
+  border-right: 4px solid #279e43;
+}
+
+#alertSuccess .icon-alert{
+  color: #279e43;
+}
+
+#alertSuccess .msg{
+  color: #155724;
+}
+
+.alert.show{
+  transform: translateY(50%);
+}
+
+.alert.hide{
+  transform: translateY(-100%);
+}
 
 /* Media querys */
 
@@ -654,5 +716,15 @@ Seccion contacto */
     width: 100%;
   }
 
+
+  /* Alertas */
+  .alert{
+    width: 100%;
+  }
+
+}
+
+.alert.show{
+  transform: translateY(150%);
 }
 
