@@ -524,6 +524,11 @@ Seccion contacto */
   color: var(--color-primario);
 }
 
+.fiels-btn{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 
 
 
@@ -635,4 +640,19 @@ Seccion contacto */
     display: none;
   }
 
+
+  /* Contactos */
+  #formulario{
+    width: 100%;
+  }
+
+  .two-fiels{
+    flex-direction: column;
+  }
+
+  .inputConIcon{
+    width: 100%;
+  }
+
 }
+
