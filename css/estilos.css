@@ -742,9 +742,24 @@ Seccion contacto */
     width: 100%;
   }
 
+  .alert.show{
+    transform: translateY(150%);
+  }
+
+
+  /* Boton wsp */
+  .btn-wsp{
+    bottom: 30px;
+    left: 40px;
+    
+  }
+
+  .btn-wsp img{
+    width: 50px;
+  }
+
 }
 
-.alert.show{
-  transform: translateY(150%);
-}
+
+
 
