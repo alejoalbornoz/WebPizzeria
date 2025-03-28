@@ -15,6 +15,11 @@
   font-family: var(--font-default);
 }
 
+
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-background);
 }
@@ -601,7 +606,7 @@ Seccion contacto */
   position: fixed;
   bottom: 50px;
   right: 50px;
-  z-index: 1000;
+  
 }
 
 .btn-wsp img{
