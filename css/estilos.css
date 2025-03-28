@@ -401,16 +401,16 @@ body {
   overflow: hidden;
   position: relative;
   height: 250px;
-  max-width: 25%; /* Opcional: si quieres que cada .ingre ocupe el 25% del ancho */
+  max-width: 25%; 
 }
 
 .img-ingre {
   position: absolute;
-  width: 100%; /* Ocupa todo el ancho del contenedor */
-  height: 100%; /* Ocupa todo el alto del contenedor */
+  width: 100%; 
+  height: 100%; 
   left: 50%;
   transform: translateX(-50%);
-  object-fit: cover; /* Recorta la imagen para que cubra el espacio sin deformarse */
+  object-fit: cover; 
 }
 
 .info-ingre{
@@ -507,7 +507,7 @@ Seccion contacto */
   top: 19px;
   color: #888;
   background-color: transparent;
-  pointer-events: none; /* Hace que el ícono no interfiera con la escritura */
+  pointer-events: none; 
   transition: all 0.5s;
 }
 
@@ -611,7 +611,7 @@ Seccion contacto */
 }
 
 .btn-wsp img:hover {
-  transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+  transform: scale(1.1); 
 }
 
 /* Media querys */
