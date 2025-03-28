@@ -594,6 +594,26 @@ Seccion contacto */
   transform: translateY(-100%);
 }
 
+
+/* Boton wsp */
+
+.btn-wsp{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+}
+
+.btn-wsp img{
+  width: 60px;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.btn-wsp img:hover {
+  transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+}
+
 /* Media querys */
 
 @media screen and (max-width: 850px) {
